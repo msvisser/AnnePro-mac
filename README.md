@@ -25,3 +25,7 @@ your user, under the tab *Login items* you will be able to add the *AnnePro.app*
   
 These issues are probably related to my inexperiece with the CoreBluetooth library, and creating macOS applications in general.
 Please leave a pull request if you know how to fix these issues.
+
+# License
+All code in this project is licensed under the MIT license, see [LICENSE](LICENSE).
+The keyboard icon used is from http://flaticons.net.
