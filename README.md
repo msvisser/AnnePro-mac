@@ -6,7 +6,9 @@ Please create an issue if you encounter a bug, or if you would like to see addit
 
 # Screenshots
 ![Status bar menu](screenshot/annepro-menu.png)
+
 ![Lighting window](screenshot/annepro-lighting.png)
+
 ![Layout window](screenshot/annepro-layout.png)
 
 # Known problems
