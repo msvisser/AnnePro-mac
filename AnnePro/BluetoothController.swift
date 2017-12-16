@@ -3,7 +3,7 @@
 //  AnnePro
 //
 //  Created by Michiel Visser on 04/12/2017.
-//  Copyright © 2017 Michiel Visser. All rights reserved.
+//  Copyright © 2017 Michiel Visser. MIT license, see LICENSE.
 //
 
 //import Foundation
