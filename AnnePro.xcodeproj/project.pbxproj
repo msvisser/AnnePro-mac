@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC1E4C2D1FD9CD1400224325 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1E4C2B1FD9CD1400224325 /* LayoutViewController.swift */; };
+		CC1E4C2E1FD9CD1400224325 /* LayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1E4C2C1FD9CD1400224325 /* LayoutViewController.xib */; };
+		CC1E4C311FD9CDD400224325 /* LayoutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1E4C2F1FD9CDD400224325 /* LayoutWindowController.swift */; };
+		CC1E4C321FD9CDD400224325 /* LayoutWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1E4C301FD9CDD400224325 /* LayoutWindowController.xib */; };
+		CCD7E0251FD5857100BD2088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7E0241FD5857100BD2088 /* AppDelegate.swift */; };
+		CCD7E0271FD5857100BD2088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD7E0261FD5857100BD2088 /* Assets.xcassets */; };
+		CCD7E02A1FD5857100BD2088 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD7E0281FD5857100BD2088 /* MainMenu.xib */; };
+		CCD7E0331FD58A4000BD2088 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7E0321FD58A4000BD2088 /* StatusMenuController.swift */; };
+		CCD7E0351FD58C0D00BD2088 /* BluetoothController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7E0341FD58C0D00BD2088 /* BluetoothController.swift */; };
+		CCF7316E1FD5CEF400271FC9 /* KeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7316D1FD5CEF400271FC9 /* KeyboardController.swift */; };
+		CCF731991FD6FA5C00271FC9 /* LightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF731971FD6FA5C00271FC9 /* LightingViewController.swift */; };
+		CCF7319A1FD6FA5C00271FC9 /* LightingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF731981FD6FA5C00271FC9 /* LightingViewController.xib */; };
+		CCF731A31FD714E500271FC9 /* LightingWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF731A11FD714E500271FC9 /* LightingWindowController.swift */; };
+		CCF731A41FD714E500271FC9 /* LightingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF731A21FD714E500271FC9 /* LightingWindowController.xib */; };
+		CCF731A61FD7305100271FC9 /* CRC16.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF731A51FD7305100271FC9 /* CRC16.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC1E4C2B1FD9CD1400224325 /* LayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
+		CC1E4C2C1FD9CD1400224325 /* LayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayoutViewController.xib; sourceTree = "<group>"; };
+		CC1E4C2F1FD9CDD400224325 /* LayoutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutWindowController.swift; sourceTree = "<group>"; };
+		CC1E4C301FD9CDD400224325 /* LayoutWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayoutWindowController.xib; sourceTree = "<group>"; };
+		CCD7E0211FD5857100BD2088 /* AnnePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnnePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD7E0241FD5857100BD2088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCD7E0261FD5857100BD2088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCD7E0291FD5857100BD2088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CCD7E02B1FD5857100BD2088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD7E02C1FD5857100BD2088 /* AnnePro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnnePro.entitlements; sourceTree = "<group>"; };
+		CCD7E0321FD58A4000BD2088 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		CCD7E0341FD58C0D00BD2088 /* BluetoothController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothController.swift; sourceTree = "<group>"; };
+		CCF7316D1FD5CEF400271FC9 /* KeyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardController.swift; sourceTree = "<group>"; };
+		CCF731971FD6FA5C00271FC9 /* LightingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingViewController.swift; sourceTree = "<group>"; };
+		CCF731981FD6FA5C00271FC9 /* LightingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightingViewController.xib; sourceTree = "<group>"; };
+		CCF731A11FD714E500271FC9 /* LightingWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingWindowController.swift; sourceTree = "<group>"; };
+		CCF731A21FD714E500271FC9 /* LightingWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightingWindowController.xib; sourceTree = "<group>"; };
+		CCF731A51FD7305100271FC9 /* CRC16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRC16.swift; sourceTree = "<group>"; };
+		CCF731A71FD7F9A200271FC9 /* AnnePro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnnePro-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCD7E01E1FD5857100BD2088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCD7E0181FD5857100BD2088 = {
+			isa = PBXGroup;
+			children = (
+				CCD7E0231FD5857100BD2088 /* AnnePro */,
+				CCD7E0221FD5857100BD2088 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCD7E0221FD5857100BD2088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCD7E0211FD5857100BD2088 /* AnnePro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCD7E0231FD5857100BD2088 /* AnnePro */ = {
+			isa = PBXGroup;
+			children = (
+				CCD7E0241FD5857100BD2088 /* AppDelegate.swift */,
+				CCD7E0261FD5857100BD2088 /* Assets.xcassets */,
+				CCD7E0281FD5857100BD2088 /* MainMenu.xib */,
+				CCD7E02B1FD5857100BD2088 /* Info.plist */,
+				CCD7E02C1FD5857100BD2088 /* AnnePro.entitlements */,
+				CCD7E0321FD58A4000BD2088 /* StatusMenuController.swift */,
+				CCD7E0341FD58C0D00BD2088 /* BluetoothController.swift */,
+				CCF7316D1FD5CEF400271FC9 /* KeyboardController.swift */,
+				CCF731971FD6FA5C00271FC9 /* LightingViewController.swift */,
+				CCF731981FD6FA5C00271FC9 /* LightingViewController.xib */,
+				CCF731A11FD714E500271FC9 /* LightingWindowController.swift */,
+				CCF731A21FD714E500271FC9 /* LightingWindowController.xib */,
+				CCF731A51FD7305100271FC9 /* CRC16.swift */,
+				CCF731A71FD7F9A200271FC9 /* AnnePro-Bridging-Header.h */,
+				CC1E4C2B1FD9CD1400224325 /* LayoutViewController.swift */,
+				CC1E4C2C1FD9CD1400224325 /* LayoutViewController.xib */,
+				CC1E4C2F1FD9CDD400224325 /* LayoutWindowController.swift */,
+				CC1E4C301FD9CDD400224325 /* LayoutWindowController.xib */,
+			);
+			path = AnnePro;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCD7E0201FD5857100BD2088 /* AnnePro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCD7E02F1FD5857100BD2088 /* Build configuration list for PBXNativeTarget "AnnePro" */;
+			buildPhases = (
+				CCD7E01D1FD5857100BD2088 /* Sources */,
+				CCD7E01E1FD5857100BD2088 /* Frameworks */,
+				CCD7E01F1FD5857100BD2088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnnePro;
+			productName = AnnePro;
+			productReference = CCD7E0211FD5857100BD2088 /* AnnePro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCD7E0191FD5857100BD2088 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Michiel Visser";
+				TargetAttributes = {
+					CCD7E0201FD5857100BD2088 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CCD7E01C1FD5857100BD2088 /* Build configuration list for PBXProject "AnnePro" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCD7E0181FD5857100BD2088;
+			productRefGroup = CCD7E0221FD5857100BD2088 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCD7E0201FD5857100BD2088 /* AnnePro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCD7E01F1FD5857100BD2088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD7E0271FD5857100BD2088 /* Assets.xcassets in Resources */,
+				CC1E4C2E1FD9CD1400224325 /* LayoutViewController.xib in Resources */,
+				CCF7319A1FD6FA5C00271FC9 /* LightingViewController.xib in Resources */,
+				CCD7E02A1FD5857100BD2088 /* MainMenu.xib in Resources */,
+				CCF731A41FD714E500271FC9 /* LightingWindowController.xib in Resources */,
+				CC1E4C321FD9CDD400224325 /* LayoutWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCD7E01D1FD5857100BD2088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF7316E1FD5CEF400271FC9 /* KeyboardController.swift in Sources */,
+				CCF731991FD6FA5C00271FC9 /* LightingViewController.swift in Sources */,
+				CC1E4C311FD9CDD400224325 /* LayoutWindowController.swift in Sources */,
+				CC1E4C2D1FD9CD1400224325 /* LayoutViewController.swift in Sources */,
+				CCD7E0331FD58A4000BD2088 /* StatusMenuController.swift in Sources */,
+				CCD7E0351FD58C0D00BD2088 /* BluetoothController.swift in Sources */,
+				CCD7E0251FD5857100BD2088 /* AppDelegate.swift in Sources */,
+				CCF731A61FD7305100271FC9 /* CRC16.swift in Sources */,
+				CCF731A31FD714E500271FC9 /* LightingWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CCD7E0281FD5857100BD2088 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCD7E0291FD5857100BD2088 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCD7E02D1FD5857100BD2088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCD7E02E1FD5857100BD2088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		CCD7E0301FD5857100BD2088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AnnePro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.webmichiel.AnnePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AnnePro/AnnePro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		CCD7E0311FD5857100BD2088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AnnePro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.webmichiel.AnnePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AnnePro/AnnePro-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCD7E01C1FD5857100BD2088 /* Build configuration list for PBXProject "AnnePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD7E02D1FD5857100BD2088 /* Debug */,
+				CCD7E02E1FD5857100BD2088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCD7E02F1FD5857100BD2088 /* Build configuration list for PBXNativeTarget "AnnePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD7E0301FD5857100BD2088 /* Debug */,
+				CCD7E0311FD5857100BD2088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCD7E0191FD5857100BD2088 /* Project object */;
+}

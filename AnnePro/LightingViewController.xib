@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LightingViewController" customModule="AnnePro" customModuleProvider="target">
+            <connections>
+                <outlet property="aKey" destination="f6T-dX-Hlh" id="zCY-r4-RSr"/>
+                <outlet property="anneKey" destination="4Yo-Wv-mRs" id="PP8-1Q-5uM"/>
+                <outlet property="bKey" destination="BOr-ie-KFH" id="RbX-iX-nbL"/>
+                <outlet property="backslashKey" destination="oLV-bs-CeF" id="Zcc-rP-gH6"/>
+                <outlet property="backspaceKey" destination="Vaa-rg-vPG" id="AWR-sg-3Uc"/>
+                <outlet property="brightnessSlider" destination="j6S-Hm-j1O" id="Z6m-zz-ChL"/>
+                <outlet property="cKey" destination="iC5-TE-Nak" id="vcF-YA-vI4"/>
+                <outlet property="capsKey" destination="jjS-1O-lUS" id="5aR-os-N7N"/>
+                <outlet property="commaKey" destination="E6Y-pH-wW6" id="QS3-Q6-8Ul"/>
+                <outlet property="dKey" destination="Q4i-jn-6Qf" id="SuK-ix-VUL"/>
+                <outlet property="downloadButton" destination="MDF-pK-csz" id="ksO-2I-MVC"/>
+                <outlet property="eKey" destination="JeT-dx-MQk" id="i6J-TU-fdx"/>
+                <outlet property="eightKey" destination="NSC-OE-ORx" id="SWO-nP-KHk"/>
+                <outlet property="enterKey" destination="P4e-zY-pt7" id="lH8-ud-Gmx"/>
+                <outlet property="escKey" destination="yEA-xx-Z2e" id="S5t-aJ-3KV"/>
+                <outlet property="fKey" destination="DTx-2I-SBh" id="GAw-1v-x0h"/>
+                <outlet property="fiveKey" destination="Zaj-gZ-2SN" id="pBh-23-PYw"/>
+                <outlet property="fnKey" destination="QDe-Kb-QyI" id="nOX-iB-0yb"/>
+                <outlet property="fourKey" destination="gWg-s9-f3o" id="iDr-ZC-WtG"/>
+                <outlet property="gKey" destination="7Nm-8n-K2g" id="Eym-4n-1iL"/>
+                <outlet property="hKey" destination="WNg-7w-P3Q" id="K80-4V-nUV"/>
+                <outlet property="iKey" destination="bQd-ck-eLx" id="r4t-EZ-yfK"/>
+                <outlet property="jKey" destination="Y4n-Jy-pQD" id="ii6-Wd-Zfr"/>
+                <outlet property="kKey" destination="M6j-6E-fQK" id="8qo-Bl-i9g"/>
+                <outlet property="lKey" destination="HWE-AU-AZp" id="xaZ-mE-GGz"/>
+                <outlet property="laltKey" destination="Rcy-92-cuV" id="iw6-cS-kkm"/>
+                <outlet property="lctrlKey" destination="1bT-qr-7hX" id="gDx-JG-yev"/>
+                <outlet property="lshiftKey" destination="Mte-JP-FOl" id="D0B-JH-f45"/>
+                <outlet property="mKey" destination="R2D-Z1-XX3" id="RMs-cr-V8H"/>
+                <outlet property="minusKey" destination="eCY-ui-hYz" id="MQa-pA-TKG"/>
+                <outlet property="multipleColorWell" destination="q17-Re-kvS" id="NlT-Xe-KVB"/>
+                <outlet property="nKey" destination="YaL-gz-LRV" id="S7b-f0-F8M"/>
+                <outlet property="nineKey" destination="k27-SJ-8pT" id="tJa-HT-kLl"/>
+                <outlet property="oKey" destination="Eqz-Kb-Oog" id="LWH-TP-vD2"/>
+                <outlet property="oneKey" destination="kwS-O5-HFX" id="Nha-Np-xwa"/>
+                <outlet property="pKey" destination="idZ-Fy-FpU" id="keO-e8-0uM"/>
+                <outlet property="periodKey" destination="Nsu-zt-5uc" id="o25-Pb-xYk"/>
+                <outlet property="plusKey" destination="RUo-MQ-eSh" id="SBc-PR-1Cr"/>
+                <outlet property="qKey" destination="Oz6-EL-xSt" id="wVI-3N-6DN"/>
+                <outlet property="quoteKey" destination="HrT-jV-KNT" id="zz4-B2-Ks7"/>
+                <outlet property="rKey" destination="QRy-1u-HBN" id="Chz-YJ-2Az"/>
+                <outlet property="raltKey" destination="PrJ-TW-yjy" id="Lwe-7j-wdd"/>
+                <outlet property="rctrlKey" destination="lHq-1b-m4P" id="mbh-Nc-kHc"/>
+                <outlet property="rshiftKey" destination="tka-Gi-m7w" id="V1T-3E-gIs"/>
+                <outlet property="sKey" destination="7ME-Wg-2I4" id="f8m-B5-b0h"/>
+                <outlet property="semicolonKey" destination="NHV-cd-icH" id="pdP-jj-HU0"/>
+                <outlet property="sevenKey" destination="GM6-tG-o09" id="6g9-rp-bcv"/>
+                <outlet property="sixKey" destination="zuo-SB-wGK" id="xdb-1N-0lV"/>
+                <outlet property="slashKey" destination="np2-bb-Va3" id="RiR-5m-a0M"/>
+                <outlet property="spaceKey" destination="nig-Er-qtD" id="7rn-q4-0xQ"/>
+                <outlet property="squareCloseKey" destination="D32-YR-rc1" id="ycI-Y7-v4H"/>
+                <outlet property="squareOpenKey" destination="17q-J6-Zvq" id="Rax-j6-iov"/>
+                <outlet property="tKey" destination="WYw-xi-X66" id="R37-0c-XJV"/>
+                <outlet property="tabKey" destination="hid-yC-gCd" id="JQ1-w5-5l6"/>
+                <outlet property="threeKey" destination="aIf-WW-inJ" id="kvH-DI-0ZV"/>
+                <outlet property="twoKey" destination="9uv-bq-NZb" id="Ulc-7l-878"/>
+                <outlet property="uKey" destination="bzI-9Z-n5G" id="2BG-QZ-Dk2"/>
+                <outlet property="uploadButton" destination="MYB-Ov-YFe" id="KW7-4H-1yd"/>
+                <outlet property="vKey" destination="thL-vT-4Zh" id="ZDe-SA-qD8"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="wKey" destination="0Tt-za-n5g" id="XOp-Ee-fuA"/>
+                <outlet property="windowsKey" destination="evH-6L-0KD" id="QWu-5T-I0S"/>
+                <outlet property="xKey" destination="Sab-cj-pOu" id="ruS-b4-2kC"/>
+                <outlet property="yKey" destination="2Qy-xs-o2G" id="L8s-yQ-0yi"/>
+                <outlet property="zKey" destination="QoT-Ad-kvf" id="4Bw-h7-huG"/>
+                <outlet property="zeroKey" destination="EBN-Gn-qzj" id="CdM-iQ-Cpw"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="520" height="312"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <colorWell fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yEA-xx-Z2e">
+                    <rect key="frame" x="20" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kwS-O5-HFX">
+                    <rect key="frame" x="52" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9uv-bq-NZb">
+                    <rect key="frame" x="84" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIf-WW-inJ">
+                    <rect key="frame" x="116" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWg-s9-f3o">
+                    <rect key="frame" x="148" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zaj-gZ-2SN">
+                    <rect key="frame" x="180" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zuo-SB-wGK">
+                    <rect key="frame" x="212" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GM6-tG-o09">
+                    <rect key="frame" x="244" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NSC-OE-ORx">
+                    <rect key="frame" x="276" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k27-SJ-8pT">
+                    <rect key="frame" x="308" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBN-Gn-qzj">
+                    <rect key="frame" x="340" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCY-ui-hYz">
+                    <rect key="frame" x="372" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RUo-MQ-eSh">
+                    <rect key="frame" x="404" y="260" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oz6-EL-xSt">
+                    <rect key="frame" x="68" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hid-yC-gCd">
+                    <rect key="frame" x="20" y="229" width="48" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-1O-lUS">
+                    <rect key="frame" x="20" y="197" width="56" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mte-JP-FOl">
+                    <rect key="frame" x="20" y="165" width="72" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bT-qr-7hX">
+                    <rect key="frame" x="20" y="133" width="40" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evH-6L-0KD">
+                    <rect key="frame" x="60" y="133" width="40" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tka-Gi-m7w">
+                    <rect key="frame" x="412" y="165" width="88" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Tt-za-n5g">
+                    <rect key="frame" x="100" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JeT-dx-MQk">
+                    <rect key="frame" x="132" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRy-1u-HBN">
+                    <rect key="frame" x="164" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYw-xi-X66">
+                    <rect key="frame" x="196" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-xs-o2G">
+                    <rect key="frame" x="228" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bzI-9Z-n5G">
+                    <rect key="frame" x="260" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-ck-eLx">
+                    <rect key="frame" x="292" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eqz-Kb-Oog">
+                    <rect key="frame" x="324" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="idZ-Fy-FpU">
+                    <rect key="frame" x="356" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="17q-J6-Zvq">
+                    <rect key="frame" x="388" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6T-dX-Hlh">
+                    <rect key="frame" x="76" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ME-Wg-2I4">
+                    <rect key="frame" x="108" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q4i-jn-6Qf">
+                    <rect key="frame" x="140" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DTx-2I-SBh">
+                    <rect key="frame" x="172" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Nm-8n-K2g">
+                    <rect key="frame" x="204" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNg-7w-P3Q">
+                    <rect key="frame" x="236" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4n-Jy-pQD">
+                    <rect key="frame" x="268" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6j-6E-fQK">
+                    <rect key="frame" x="300" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWE-AU-AZp">
+                    <rect key="frame" x="332" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHV-cd-icH">
+                    <rect key="frame" x="364" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QoT-Ad-kvf">
+                    <rect key="frame" x="92" y="165" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-cj-pOu">
+                    <rect key="frame" x="124" y="165" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iC5-TE-Nak">
+                    <rect key="frame" x="156" y="165" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thL-vT-4Zh">
+                    <rect key="frame" x="188" y="165" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BOr-ie-KFH">
+                    <rect key="frame" x="220" y="165" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YaL-gz-LRV">
+                    <rect key="frame" x="252" y="165" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2D-Z1-XX3">
+                    <rect key="frame" x="284" y="165" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E6Y-pH-wW6">
+                    <rect key="frame" x="316" y="165" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nsu-zt-5uc">
+                    <rect key="frame" x="348" y="165" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="np2-bb-Va3">
+                    <rect key="frame" x="380" y="165" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HrT-jV-KNT">
+                    <rect key="frame" x="396" y="197" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D32-YR-rc1">
+                    <rect key="frame" x="420" y="229" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vaa-rg-vPG">
+                    <rect key="frame" x="436" y="260" width="64" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oLV-bs-CeF">
+                    <rect key="frame" x="452" y="229" width="48" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P4e-zY-pt7">
+                    <rect key="frame" x="428" y="197" width="72" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-92-cuV">
+                    <rect key="frame" x="100" y="133" width="40" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QDe-Kb-QyI">
+                    <rect key="frame" x="380" y="133" width="40" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrJ-TW-yjy">
+                    <rect key="frame" x="340" y="133" width="40" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Yo-Wv-mRs">
+                    <rect key="frame" x="420" y="133" width="40" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHq-1b-m4P">
+                    <rect key="frame" x="460" y="133" width="40" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nig-Er-qtD">
+                    <rect key="frame" x="140" y="133" width="200" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q17-Re-kvS">
+                    <rect key="frame" x="20" y="49" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </colorWell>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x3r-pX-zl9">
+                    <rect key="frame" x="93" y="80" width="100" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="All" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7tq-6r-byb">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="allClicked:" target="-2" id="5z4-xi-0gd"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zpE-8G-p9d">
+                    <rect key="frame" x="93" y="47" width="100" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Modifiers" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4f3-GT-GUw">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="modifiersClicked:" target="-2" id="tMW-L1-3Xd"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5JJ-6m-yL3">
+                    <rect key="frame" x="194" y="80" width="100" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Numbers" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fTx-Z9-Lnu">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="numbersClicked:" target="-2" id="Qyk-yx-R1n"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6jV-jI-cnB">
+                    <rect key="frame" x="194" y="47" width="100" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Letters" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LyW-6D-Jae">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="lettersClicked:" target="-2" id="NcT-ia-ZBS"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MYB-Ov-YFe">
+                    <rect key="frame" x="406" y="47" width="100" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Upload" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="B4A-VS-6jf">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="uploadClicked:" target="-2" id="E1l-sv-Ozl"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDF-pK-csz">
+                    <rect key="frame" x="406" y="80" width="101" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Download" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YEZ-zy-nu6">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="downloadClicked:" target="-2" id="8PA-KS-qDB"/>
+                    </connections>
+                </button>
+                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j6S-Hm-j1O">
+                    <rect key="frame" x="98" y="18" width="404" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="10" doubleValue="1" tickMarkPosition="above" numberOfTickMarks="10" allowsTickMarkValuesOnly="YES" sliderType="linear" id="Ypv-cw-mLd"/>
+                    <connections>
+                        <action selector="brightnessChanged:" target="-2" id="kTD-YI-HEM"/>
+                    </connections>
+                </slider>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vhN-rs-HbW">
+                    <rect key="frame" x="17" y="20" width="69" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Brightness" id="bMC-FX-4Xq">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="-1438" y="99"/>
+        </customView>
+    </objects>
+</document>
