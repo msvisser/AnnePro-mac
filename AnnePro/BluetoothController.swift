@@ -87,7 +87,22 @@ class BluetoothController: NSObject, CBCentralManagerDelegate, CBPeripheralDeleg
         if central.state == .poweredOn {
             print("Bluetooth available!")
             delegate?.updateStatus(status: .SCANNING)
-            central.scanForPeripherals(withServices: nil, options: nil)
+            print("Searching for a connected Anne Pro")
+            let peripherals = self.centralManager.retrieveConnectedPeripherals(withServices: [ANNE_PRO_SERVICE_UUID])
+            if (peripherals.count > 0) {
+                let peripheral = peripherals[0];
+                print("Found", peripherals.count, "matching peripherals", peripheral)
+                self.centralManager.stopScan()
+                
+                self.peripheral = peripheral
+                self.peripheral.delegate = self
+                
+                delegate?.updateStatus(status: .CONNECTING)
+                self.centralManager.connect(peripheral, options: nil)
+            } else {
+                print("No paired peripherals found, scanning...")
+                central.scanForPeripherals(withServices: nil, options: nil)
+            }
         } else {
             print("Bluetooth not available.")
             delegate?.updateStatus(status: .DISCONNECTED)
