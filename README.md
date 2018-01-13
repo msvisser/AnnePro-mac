@@ -19,7 +19,6 @@ your user, under the tab *Login items* you will be able to add the *AnnePro.app*
 ![Layout window](screenshot/annepro-layout.png)
 
 # Known problems
-- Getting keyboard to connect is all over the place. Sometimes it connects instantly, and sometimes you need to retry a lot.
 - Uploading new lighting and layout information will sometimes stop halfway through. Currently the layout code will
   retry until the keyboard has the correct layout, but the lighting will not.
   
