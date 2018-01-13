@@ -101,7 +101,12 @@ class BluetoothController: NSObject, CBCentralManagerDelegate, CBPeripheralDeleg
                 self.centralManager.connect(peripheral, options: nil)
             } else {
                 print("No paired peripherals found, scanning...")
-                central.scanForPeripherals(withServices: nil, options: nil)
+                central.scanForPeripherals(withServices: [ANNE_PRO_SERVICE_UUID], options: nil)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                    print("reload scan")
+                    central.stopScan()
+                    self.centralManagerDidUpdateState(central)
+                }
             }
         } else {
             print("Bluetooth not available.")
@@ -180,8 +185,7 @@ class BluetoothController: NSObject, CBCentralManagerDelegate, CBPeripheralDeleg
         if self.peripheral == peripheral && self.peripheral.state != .connected {
             self.peripheral = nil
             self.writeCharacteristic = nil
-            delegate?.updateStatus(status: .SCANNING)
-            central.scanForPeripherals(withServices: nil, options: nil)
+            self.centralManagerDidUpdateState(central)
         }
     }
     
