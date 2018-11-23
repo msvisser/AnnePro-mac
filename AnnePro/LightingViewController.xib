@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,6 +23,7 @@
                 <outlet property="eightKey" destination="NSC-OE-ORx" id="SWO-nP-KHk"/>
                 <outlet property="enterKey" destination="P4e-zY-pt7" id="lH8-ud-Gmx"/>
                 <outlet property="escKey" destination="yEA-xx-Z2e" id="S5t-aJ-3KV"/>
+                <outlet property="exportButton" destination="cuT-Su-iKf" id="bAu-g0-NfK"/>
                 <outlet property="fKey" destination="DTx-2I-SBh" id="GAw-1v-x0h"/>
                 <outlet property="fiveKey" destination="Zaj-gZ-2SN" id="pBh-23-PYw"/>
                 <outlet property="fnKey" destination="QDe-Kb-QyI" id="nOX-iB-0yb"/>
@@ -29,6 +31,7 @@
                 <outlet property="gKey" destination="7Nm-8n-K2g" id="Eym-4n-1iL"/>
                 <outlet property="hKey" destination="WNg-7w-P3Q" id="K80-4V-nUV"/>
                 <outlet property="iKey" destination="bQd-ck-eLx" id="r4t-EZ-yfK"/>
+                <outlet property="importButton" destination="rrd-qo-blx" id="sPe-cW-eXg"/>
                 <outlet property="jKey" destination="Y4n-Jy-pQD" id="ii6-Wd-Zfr"/>
                 <outlet property="kKey" destination="M6j-6E-fQK" id="8qo-Bl-i9g"/>
                 <outlet property="lKey" destination="HWE-AU-AZp" id="xaZ-mE-GGz"/>
@@ -474,6 +477,28 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cuT-Su-iKf">
+                    <rect key="frame" x="300" y="80" width="105" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Export File" bezelStyle="rounded" alignment="center" borderStyle="border" identifier="exportButton" imageScaling="proportionallyDown" inset="2" id="oNh-O5-2fl">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="exportToJson:" target="-2" id="aSI-Ol-Ilo"/>
+                    </connections>
+                </button>
+                <button identifier="importButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rrd-qo-blx">
+                    <rect key="frame" x="300" y="47" width="105" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Import File" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wQl-yM-eVG">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="importFromJson:" target="-2" id="BxO-qu-pmG"/>
+                    </connections>
+                </button>
             </subviews>
             <point key="canvasLocation" x="-1438" y="99"/>
         </customView>

@@ -82,6 +82,9 @@ class LightingViewController: NSViewController {
     @IBOutlet weak var downloadButton: NSButton!
     @IBOutlet weak var uploadButton: NSButton!
     @IBOutlet weak var brightnessSlider: NSSlider!
+    @IBOutlet weak var exportButton: NSButton!
+    @IBOutlet weak var importButton: NSButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -205,6 +208,108 @@ class LightingViewController: NSViewController {
         colorData[2] = UInt8((checksum >> 8) & 0xff);
         
         StatusMenuController.keyboardController.setCustomLightingData(data: colorData)
+    }
+    @IBAction func exportToJson(_ sender: NSButton) {
+        guard let window = view.window else { return }
+        
+        //convert datalist to JSON
+        var colorData: [UInt8] = []
+        for _ in 0..<214 {
+            colorData.append(0)
+        }
+        
+        var j = 0
+        for i in 0..<70 {
+            if !(i == 40 || i == 53 || i == 54 || i == 59 || i == 60 || i == 62 || i == 63 || i == 64 || i == 65) {
+                let c = allList[j].color
+                colorData[(i * 3 + 0) + 4] = UInt8(c.redComponent * 255)
+                colorData[(i * 3 + 1) + 4] = UInt8(c.greenComponent * 255)
+                colorData[(i * 3 + 2) + 4] = UInt8(c.blueComponent * 255)
+                j += 1
+            } else {
+                colorData[(i * 3 + 0) + 4] = 255
+                colorData[(i * 3 + 1) + 4] = 255
+                colorData[(i * 3 + 2) + 4] = 255
+            }
+        }
+        
+        let checksum = CRC16.calculateCRC16(colorData, start: 4, length: 210)
+        colorData[3] = UInt8(checksum & 0xff);
+        colorData[2] = UInt8((checksum >> 8) & 0xff);
+        
+        let encoder = JSONEncoder()
+        do{
+            let data = try encoder.encode(colorData)
+            
+            print(data)
+            
+            //open save panel
+            
+            let panel = NSSavePanel()
+            panel.nameFieldStringValue = "AnneProLEDs.json"
+            panel.allowedFileTypes = ["json"]
+            panel.directoryURL = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Documents")
+            
+            panel.beginSheetModal(for: window) { (result) in
+                if result.rawValue == NSFileHandlingPanelOKButton,
+                    let url = panel.url {
+                    //encode and save file
+                    do {
+                        try data.write(to: url)
+                    } catch {
+                        self.showErrorDialogIn(window: window,
+                                               title: "Unable to save file",
+                                               message: error.localizedDescription)
+                    }
+                }
+            }
+        } catch {
+            self.showErrorDialogIn(window: window,
+                                   title: "Something unexpected happened",
+                                   message: "Please, write an issue on GitHub at ")
+        }
+    }
+    
+    @IBAction func importFromJson(_ sender: Any) {
+        //open file
+        guard let window = view.window else { return }
+        var selectedFile: URL = FileManager.default.homeDirectoryForCurrentUser
+        
+        let panel = NSOpenPanel()
+        panel.allowsMultipleSelection = false
+
+        panel.beginSheetModal(for: window) { (result) in
+            if result.rawValue == NSFileHandlingPanelOKButton {
+                selectedFile = panel.urls[0]
+                print(selectedFile)
+                //read from file
+                do{
+                    //convert to list
+                    let decoder = JSONDecoder()
+                    let json = try Data(contentsOf: selectedFile)
+                    let list = try decoder.decode([UInt8].self, from: json)
+                    print(list)
+                    //apply to view
+                    var j = 0
+                    for i in 0..<70 {
+                        if !(i == 40 || i == 53 || i == 54 || i == 59 || i == 60 || i == 62 || i == 63 || i == 64 || i == 65) {
+                            let c = NSColor(red: CGFloat(Double(list[(i * 3 + 0) + 4]) / 255.0), green: CGFloat(Double(list[(i * 3 + 1) + 4]) / 255.0), blue: CGFloat(Double(list[(i * 3 + 2) + 4]) / 255.0), alpha: 1.0)
+                            self.allList[j].color = c
+                            j += 1
+                        }
+                    }
+                } catch {
+                    self.showErrorDialogIn(window: window, title: "Unable to read file", message: error.localizedDescription)
+                }
+            }
+        }
+    }
+    func showErrorDialogIn(window: NSWindow, title: String, message: String) {
+        let alert = NSAlert()
+        alert.messageText = title
+        alert.informativeText = message
+        alert.alertStyle = .critical
+        alert.beginSheetModal(for: window, completionHandler: nil)
     }
     @IBAction func brightnessChanged(_ sender: NSSlider) {
         let br = UInt8(min(max(1, self.brightnessSlider.integerValue), 10))
